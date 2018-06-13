@@ -9,10 +9,10 @@
         <h2><%= "I love " + "Ruby!!" %></h2>
         <h1><%= 1 + 1 %></h1>
         <p> 97 Bowling Alley Lane, Boulder CO </p>
-        <% if 1 == 2 %>
-          <p>1 equals 2.</p>
+        <% if logged_in? %>
+          <a href="/logout">Click here to log out.</p>
         <% else %>
-          <p>1 does not equal 2.</p>
+          <a href="/login">Click here to log in</p>
         <% end %>
     </body>
 </html>
